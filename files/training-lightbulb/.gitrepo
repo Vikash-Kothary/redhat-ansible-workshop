@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/ansible/lightbulb.git
+	branch = master
+	commit = 3d4a2802c121ec667041f091f5658016bc6d61f5
+	parent = c69cd51830c4f62cd02958ba6cf0eed14e735d4a
+	method = merge
+	cmdver = 0.4.0

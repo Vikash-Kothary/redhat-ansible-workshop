@@ -1,0 +1,12 @@
+secrets.yml
+users.yml
+extra_vars.yml
+*.txt
+instructor*
+.vagrant/*
+ansible.cfg
+inventory.ini
+TODO
+TODO.md
+bak/
+*.BAK
