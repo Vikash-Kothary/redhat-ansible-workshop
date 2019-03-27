@@ -1,0 +1,5 @@
+---
+# defaults file for common/rhel
+
+messages: /var/log/messages
+domainname: ansibleworkshop.local

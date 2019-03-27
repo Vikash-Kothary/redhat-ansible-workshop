@@ -1,0 +1,20 @@
+---
+# tasks file for common/rhel
+
+- name: Configure hostname
+  hostname:
+    name: "{{ inventory_hostname }}.{{ domainname }}"
+
+- name: add user accounts
+  user: name={{ item.name }} state=present groups={{ item.groups }}
+  with_items:
+    - {name: 'fred', groups: 'users' }
+    - {name: 'wilma', groups: 'wheel' }
+
+- name: Update MOTD
+  copy:
+    src: files/motd
+    dest: /etc/motd
+    owner: root
+    group: root
+    mode: 0444

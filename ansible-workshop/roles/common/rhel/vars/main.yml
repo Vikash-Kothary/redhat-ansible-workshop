@@ -1,0 +1,4 @@
+---
+# vars file for common/rhel
+
+role_friendly_text: "COMMON RHEL TASKS like setting hostname, adding users"

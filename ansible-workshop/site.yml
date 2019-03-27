@@ -1,0 +1,15 @@
+---
+
+- name: Testing ansible-vault
+  hosts: web
+  become: yes
+  vars_files:
+    - ~/ansible-workshop/vault/vault.yml
+  tasks:
+    - name: Create a text file containing our secret password
+      copy:
+        dest: /root/super_secret.txt
+        content: "This is my super secret password - {{ secret_password }}."
+        mode: 0600
+        owner: root
+        group: root

@@ -1,0 +1,17 @@
+---
+- hosts: web
+  name: This is a play within a playbook
+  no_log: True
+  become: yes
+
+  pre_tasks:
+    - name: Log what we are doing to {{ messages }}
+      shell: /bin/logger 'running {{ role_friendly_text }}'
+
+  roles:
+    - { role: common/rhel, when: ansible_os_family == 'RedHat' }
+    - apache-simple
+
+  post_tasks:
+    - name: Log what we have done to {{ messages }}
+      shell: /bin/logger 'finished running {{ role_friendly_text }}'
