@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/network-automation/linklight.git
+	branch = master
+	commit = e354941302286df8cb2e5ffdb1ea1c497247a0b3
+	parent = abe3532fa261fbe3a13754d6a0be1a6cb4ced20e
+	method = merge
+	cmdver = 0.4.0
