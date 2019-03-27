@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/git-commands/git-subrepo#readme
+;
+[subrepo]
+	remote = https://github.com/pharriso/ansible_workshop.git
+	branch = master
+	commit = e7446671a418c18a94e7577f6138290d0f242959
+	parent = 2fe2f76758afa64cd01a98a225dee5a1e57072de
+	method = merge
+	cmdver = 0.4.0
